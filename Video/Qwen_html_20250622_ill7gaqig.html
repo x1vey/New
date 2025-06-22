@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Our Newsletter</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f2f6fc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .container {
+        background-color: white;
+        padding: 40px;
+        max-width: 500px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 16px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      input[type="text"],
+      input[type="email"] {
+        padding: 12px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 16px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 14px;
+        font-size: 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Stay Updated!</h1>
+      <p>
+        Subscribe to our newsletter and get the latest updates delivered
+        straight to your inbox.
+      </p>
+
+      <!-- Replace '#' with your backend or Formspree URL -->
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Full Name" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email Address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <div class="footer">&copy; 2025 Your Company. All rights reserved.</div>
+    </div>
+  </body>
+</html>
